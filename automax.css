@@ -42,7 +42,7 @@ body{
     margin-top: -200px;
 }
 
-/*//////////////////////// side ////////////////////////////////////*/
+/*//////////////////////// side bars///////////////////////////////////*/
 *{
     list-style: none;
     text-decoration: none;
@@ -52,6 +52,8 @@ body{
 }
 
 
+/* ////////////left//////////// */
+
 .wrapper .sidebar{
     background: rgb(38, 118, 165);
     position: fixed;
@@ -59,12 +61,14 @@ body{
     left: 0;
     width: 310px;
     height: 100%;
-    padding: 20px 0;rgb(38, 118, 165)
+    padding: 20px 0;
     transition: all 0.5s ease;
 }
 
+
+/* //////////////right////////////////// */
 .wrapperright .sidebarright{
-    background: rgb(5, 68, 104);
+    background: rgb(38, 118, 165);
     position: fixed;
     top: 0;
     right: 0;
