@@ -3,24 +3,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 body{
     background-color: rgb(255, 255, 255);
 }
 
 
-.button-with-icon {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: 310px;
-    margin-top: 50px;
-}
 
-.button-with-icon__label {
-    margin-left: 0.5rem;
-}
+
+/* HEADER Y TITULO */
+
 
 .header {
     position: relative;
@@ -31,7 +22,7 @@ body{
 .textocenter {
   position: absolute;
   color: whitesmoke;
-  top: 25%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -39,8 +30,34 @@ body{
 
 #quote{
     color: black;
-    margin-top: -200px;
+    margin-top: 10px;
 }
+
+
+
+
+
+/* BOTONES */
+
+
+.button-with-icon {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 330px;
+    margin-top: 20px;
+}
+
+.button-with-icon__label {
+    margin-left: 0.5rem;
+}
+
+
+
+
+
+
 
 /*//////////////////////// side bars///////////////////////////////////*/
 *{
@@ -55,7 +72,7 @@ body{
 /* ////////////left//////////// */
 
 .wrapper .sidebar{
-    background: rgb(38, 118, 165);
+    background: #150050;
     position: fixed;
     top: 0;
     left: 0;
@@ -68,7 +85,7 @@ body{
 
 /* //////////////right////////////////// */
 .wrapperright .sidebarright{
-    background: rgb(38, 118, 165);
+    background: #150050;
     position: fixed;
     top: 0;
     right: 0;
