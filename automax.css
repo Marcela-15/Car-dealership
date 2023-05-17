@@ -5,7 +5,7 @@
 
 
 body{
-    background-color: rgb(209, 237, 255);
+    background-color: rgb(255, 227, 227);
 }
 
 
@@ -28,7 +28,13 @@ body{
 
 .textocenter {
   position: absolute;
-  top: 50%;
+  color: whitesmoke;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#quote{
+    color: black;
 }
