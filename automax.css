@@ -53,17 +53,24 @@ body{
 }
 
 #hondacivic2016{
-    margin-left: 330px;
-    margin-top: 20px;
+    position: relative;
+    margin-left: 350px;
+    margin-bottom: 11px;
 }
 
 #kiaforte2016{
-    position: absolute;
-    margin-top: -250px;
-    margin-left: 750px;
+    position: relative;
+    margin-top: -255px;
+    margin-left: 770px;
     object-fit: scale-down;
 }
 
+#hondaAccord2016{
+    position: relative;
+    margin-top: -245px;
+    margin-left: 1170px;
+    object-fit: scale-down;
+}
 
 
 
