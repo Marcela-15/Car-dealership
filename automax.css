@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(209, 237, 255);
+}
+
+
+.button-with-icon {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button-with-icon__label {
+    margin-left: 0.5rem;
+}
