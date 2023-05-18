@@ -10,7 +10,7 @@ body{
 
 
 
-/* HEADER Y TITULO */
+/* ////////////////////////HEADER Y TITULO/////////////////////// */
 
 
 .header {
@@ -37,7 +37,7 @@ body{
 
 
 
-/* BOTONES  carros*/
+/* ///////////////////BOTONES  CARROS  MAIN  ////////////////////////////*/
 
 
 .button-with-icon {
@@ -72,8 +72,15 @@ body{
     object-fit: scale-down;
 }
 
+#xtrail2018{
+    position: relative;
+    margin-top: 50px;
+    margin-left: 350px;
+    object-fit: scale-down;
+}
 
-/* botones side bar */
+
+/* ////////////////////////botones side bar ///////////////////*/
 .button {
     position: relative;
     border: none;
@@ -101,11 +108,15 @@ body{
   }
 
 #aboutus{
+    position: fixed;
     bottom: 70px;
+    right: 0;
 }
 
 #contactus{
-    bottom: 60px;
+    position: fixed;
+    bottom: 10px;
+    right: 0;
 
     
 }
@@ -113,48 +124,83 @@ body{
 /* /////////////////// SHOP BY BRAND ///////////////////////// */
 
 #Toyota{
-    position: absolute;
+    position: fixed;
     top: 100px;
 }
 #Ford{
-    position: absolute;
+    position: fixed;
     top: 150px;
 }
 
 #Honda{
-    position: absolute;
+    position: fixed;
     top: 200px;
 }
 
 #Nissan{
-    position: absolute;
+    position: fixed;
     top: 250px;
 }
 
 #Jeep{
-    position: absolute;
+    position: fixed;
     top: 300px;
 }
 
 #Dodge{
-    position: absolute;
+    position: fixed;
     top: 350px;
 
 }
 
 #Lexus{
-    position: absolute;
+    position: fixed;
     top: 400px;
 }
 
 #Tesla{
-    position: absolute;
+    position: fixed;
     top: 450px;
 
 }
 
 
-/* /////////////// SHOP BY TYPE PENDIENTE ACOMODAR/////////////////// */
+/* /////////////// SHOP BY TYPE /////////////////// */
+
+#SUV{
+    position: fixed;
+    top: 600px;
+}
+
+#Trucks{
+    position: fixed;
+    top: 650px;
+}
+
+#Crossovers{
+    position: fixed;
+    top: 700px;
+}
+
+#Sedans{
+    position: fixed;
+    top: 750px;
+}
+
+#Coupes{
+    position: fixed;
+    top: 800px;
+}
+
+#Convertible{
+    position: fixed;
+    top: 850px;
+}
+
+#Luxury{
+    position: fixed;
+    top: 910px;
+}
 
 /*//////////////////////// side bars///////////////////////////////////*/
 *{
@@ -173,6 +219,7 @@ body{
     color:#ffffff;
     font-size: xx-large;
     font-weight: lighter;
+    position: fixed;
 }
 
 #Shopbybrand{
