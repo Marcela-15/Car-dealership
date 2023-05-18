@@ -41,6 +41,11 @@ class CarDAO {
   obtenerCarros() {
     return this.carros;
   }
+  
+  obtenerTamano(){
+    const numElements = Object.keys(carros).length;
+    return numElements;
+  }
 
   // Función para obtener un carro por su ID
   obtenerCarroPorId(id) {
