@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <script src="carDao.js"></script>
+    <script>
+        // Ensure carDao is loaded before accessing its methods
+        window.addEventListener('DOMContentLoaded', () => {
+            // Get the img1 values from the DAO
+            const cars = carDao.obtenerCarros().map(car => car.img1);
+
+            // Generate the HTML table
+            const table = document.createElement('table');
+            let row;
+            let count = 0;
+
+            for (const car of cars) {
+                if (count % 3 === 0) {
+                    // Create a new row for every third car
+                    row = document.createElement('tr');
+                    table.appendChild(row);
+                }
+
+                // Create a new cell for the img1 value
+                const cell = document.createElement('td');
+                const img = document.createElement('img');
+                img.src = car;
+                cell.appendChild(img);
+                row.appendChild(cell);
+
+                count++;
+            }
+
+            // Append the table to the body of the HTML document
+            document.body.appendChild(table);
+            const h1 = document.createElement('h1');
+            h1.innerHTML = 'Car DAO';
+            document.body.appendChild(h1);
+        });
+    </script>
+</body>
+</html>
