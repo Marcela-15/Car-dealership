@@ -1,5 +1,5 @@
 FROM node:19.8.1-alpine
-TRABAJO /server
+WORKDIR /server
 COPY package*.json ./
 COPY . /server
 RUN npm install
