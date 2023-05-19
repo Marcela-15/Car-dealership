@@ -13,7 +13,7 @@ http.createServer((request, response)=> {
             let params = Buffer.concat(data).toString();
 
 
-            fs.appendFile('formsarchivo.txt', params + '\n', (error) => {
+            fs.appendFile('./WWW/customers/customers.info', params + '\n', (error) => {
                 if (error) {
                   response.writeHead(500, { 'Content-Type': 'text/plain' });
                   response.write('Error al guardar el formulario');
@@ -62,5 +62,6 @@ http.createServer((request, response)=> {
             response.write(data);
             response.end();
         }
-    });
+    });}
+
 }).listen(8888);
