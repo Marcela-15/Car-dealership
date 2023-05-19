@@ -20,3 +20,5 @@ El funcionamiento de nuestra pagina web empieza en carsales.js ya que es el codi
 Creado por Marcela Sigala -->348533 y Alejandro Gonzalez -->348552
 Desarrollado en html, css y javascript
 Desarrollo basado en plataformas 6CC2
+
+Licencia: 0000-0000-0000-0001
