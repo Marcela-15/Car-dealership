@@ -25,7 +25,7 @@ Html, Css y JavaScript
 # Autores:
 Creado por Marcela Sigala -->348533 y Alejandro Gonzalez -->348552
 [@Marcela-15](https://github.com/Marcela-15)
-[]
+[@gozale](https://github.com/gozale)
 
 
 # Licencia:
