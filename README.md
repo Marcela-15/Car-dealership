@@ -23,9 +23,9 @@ El unico prerequisito para la instalacion es descargar los archivos y haber desc
 Html, Css y JavaScript
 
 # Autores:
-Creado por Marcela Sigala -->348533 y Alejandro Gonzalez -->348552
-[@Marcela-15](https://github.com/Marcela-15)
-[@gozale](https://github.com/gozale)
+Creado por Marcela Sigala ([@Marcela-15](https://github.com/Marcela-15)) -->348533 y Alejandro Gonzalez ([@gozale](https://github.com/gozale)( -->348552
+
+
 
 
 # Licencia:
