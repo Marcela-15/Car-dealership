@@ -4,10 +4,10 @@
 }
 
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 
 
-.titulo{
-    color: rgb(201, 143, 143);
+.tituloAboutUs{
+    color: #610094;
 }
