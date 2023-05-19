@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" > 
+  <script src="carDao.js"></script>
+  <script>
+    
+  </script>
+</head>
+<body>
+    <h1>si encuentra el ar hivo</h1>
+  <!-- notita -->
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+    const car = carDao.obtenerCarroPorId(parseInt(id));
+
+    const img = document.createElement('img');
+    img.src = car.img1;
+
+    document.body.appendChild(img);
+
+  </script>
+</body>
+</html>
