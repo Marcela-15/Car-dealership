@@ -4,137 +4,88 @@
 <head>
     <meta charset="utf-8" > 
     <title>Automax</title>
-    <link rel="stylesheet" href="automax.css">
+    <link rel="stylesheet" href="automax.css"> 
 </head>
 
 
 <body>
+    <!--Cabecera-->
+    <header id="main-header">
+		
+		<a id="logo-header" href="car.html">
+			<span class="site-name">Automax</span>
+		</a> <!-- / #logo-header -->
 
+		<nav>
+			<ul>
+				<li><a href="car.html">Inicio</a></li>
+				<li><a href="aboutus.html">Nosotros</a></li>
+				<li><a href="contactus.html">Contacto</a></li>
+			</ul>
+		</nav><!-- / nav -->
 
+	</header><!-- / #main-header -->
 
-<!-- //////////////////////////////// HEADER //////////////////////////// -->
-    <div class="header">
-        <img src="carcollagebueno.png" width="1300px">
-    </div>
-
-
-<!-- ///////////////////////////////// TITULO//////////////////////////////////////////////// -->
-    <div class="textocenter">
-        <img src="welcome.png" id="welcome" height="700" >
-        <h1 id="quote"> Your next ride is just a few clicks away</h1>
-    </div>
-
-<br>
-
-
-<!-- ///////////////////////////////// BOTONES DE CARROS //////////////////////// -->
-    
-
-<a href="hondaCivic.html">
-    <button class="button-with-icon" id="hondacivic2016">
-        <img src="WhiteHondaCivic2016.jpeg" alt="Honda Civic 2016 White" height="240" width="310">
-        <div class="button-with-icon__label">White <br> Honda Civic <br> 2016 <br> 27 USD <br> per day
+    <!-- //////////////////////////////// HEADER //////////////////////////// -->
+        <div class="header">
+            <img src="carcollagebueno.png" width="1300px">
         </div>
-    </button>
-</a>
 
 
-<a href="kiaforte.html">
-    <button class="button-with-icon" id="kiaforte2016">
-        <img src="kiaforte2016.png" alt="Kia Forte 2016 Black" height="240" width="310">
-        <div class="button-with-icon__label">Black <br> Kia Forte <br> 2016<br> 30 USD <br> per day
+    <!-- ///////////////////////////////// TITULO//////////////////////////////////////////////// -->
+        <div class="textocenter">
+            <img src="welcome.png" id="welcome" height="700" >
+            <h1 id="quote"> Your next ride is just a few clicks away</h1>
         </div>
-    </button>
-</a>
-
-<a href="hondaAccord.html">
-    <button class="button-with-icon" id="hondaAccord2016">
-        <img src="hondaaccord2016.png" alt="Kia Forte 2016 Black" height="240" width="310">
-        <div class="button-with-icon__label">Gray <br> Honda Sedan <br> 2016 <br> 37 USD <br> per day
-        </div>
-    </button>
-</a>
-
-    <button class="button-with-icon" id="xtrail2018">
-        <img src="xtrail2016orange.jpg" alt="NISSAN XTRAIL 2018 ORANGE" height="210" width="310">
-        <div class="button-with-icon__label">Orange <br> Nissan XTrail <br> 2019 <br> 45  USD <br> per day
-        </div>
-    </button>
-
-
-
-
-
-
-
-
-
-
-
-<!-- ////////////////////////////// SIDE BAR STYLE ////////////////////////////////////-->
-    <div class="wrapper">
-        <div class="sidebar">
-        </div>
-    </div>
-
-    <div class="wrapperright">
-        <div class="sidebarright">
-        </div>
-    </div>
 
     <br>
 
 
-<!--////////////////////////////botones side bar left/////////////////////////////-->
-    <h2 class="subtitlesSideBar" id="Shopbybrand">Search by brand</h2>
-        <br>
-    <button class="button button1" id="Toyota">Toyota</button>
-        <br>
-    <button class="button button1" id="Ford">Ford</button>
-        <br>
-    <button class="button button1" id="Honda">Honda</button>
-        <br>
-    <button class="button button1" id="Nissan">Nissan</button>
-        <br>
-    <button class="button button1" id="Jeep">Jeep</button>
-        <br>
-    <button class="button button1" id="Dodge">Dodge</button>
-        <br>
-    <button class="button button1" id="Lexus">Lexus</button>
-        <br>
-    <button class="button button1" id="Tesla">Tesla</button>
-        <br>
-    <h2 class="subtitlesSideBar" id="shopbytype">Search by type</h2>
-        <br>
-    <button class="button button1" id="SUV">SUV</button>
-        <br>
-    <button class="button button1" id="Trucks">Trucks</button>
-        <br>
-    <button class="button button1" id="Crossovers">Crossovers</button>
-        <br>
-    <button class="button button1" id="Sedans">Sedans</button>
-        <br>
-    <button class="button button1" id="Coupes">Coupes</button>
-        <br>
-    <button class="button button1" id="Convertible">Convertible</button>
-        <br>
-    <button class="button button1" id="Luxury">Luxury</button>
-        <br>
+    <!-- ///////////////////////////////// BOTONES DE CARROS //////////////////////// -->
+    <script src="carDao.js"></script>
+    <script>
+        // Get all the cars from the DAO
+        const cars = carDao.obtenerCarros();
+
+        // Generate the HTML table
+        const table = document.createElement('table');
+        let row;
+        let count = 0;
+
+        for (const car of cars) {
+        if (count % 3 === 0) {
+            // Create a new row for every third car
+            row = document.createElement('tr');
+            table.appendChild(row);
+        }
+
+        // Create a new cell for the img1 value
+        const cell = document.createElement('td');
+        const anchor = document.createElement('a');
+        anchor.className = 'car-link';
+
+        // Add a click event listener to the anchor
+
+        anchor.addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = "carro.html?id=" + car.id;
+        });
 
 
+        const img = document.createElement('img');
+        img.src = car.img1;
+        img.className = 'car-image';
 
-<!-- //////////////// botones side bar right /////////////////////// -->
-    <a href="aboutus.html">
-    <button class="button button1" id="aboutus">About Us</button>
-    </a>
+        anchor.appendChild(img);
+        cell.appendChild(anchor);
+        row.appendChild(cell);
 
-    <br>
+        count++;
+        }
 
-    <a href="contactus.html">
-    <button class="button button1" id="contactus">Contact Us</button>
-    </a>
-
-
+        // Append the table to the body of the HTML document
+        document.body.appendChild(table);
+    </script>
 
 
 </body>
