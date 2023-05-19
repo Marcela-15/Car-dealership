@@ -5,7 +5,7 @@ const fs = require('fs');
 http.createServer((request, response)=> {
 ``
     const file = request.url == '/' ? './car.html' : `./${request.url}`;
-    if(request.url == '/save' && request.method == "POST"){
+    if(request.url == '/forms' && request.method == "POST"){
         let data = [];
         request.on('data', value => {
             data.push(value);
@@ -13,10 +13,10 @@ http.createServer((request, response)=> {
             let params = Buffer.concat(data).toString();
 
 
-            fs.appendFile('./WWW/customers/customers.info', params + '\n', (error) => {
+            fs.appendFile('./formsarchivo.txt', params + '\n', (error) => {
                 if (error) {
                   response.writeHead(500, { 'Content-Type': 'text/plain' });
-                  response.write('Error al guardar el formulario');
+                  response.write('Error while saving');
                   response.end();
                 } else {
                     response.writeHead(302, { 'Location': './formulario.html' });
