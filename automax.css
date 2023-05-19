@@ -121,6 +121,14 @@ body{
     
 }
 
+#Forms{
+    position: fixed;
+    bottom: 130px;
+    right: 0;
+}
+
+
+
 /* /////////////////// SHOP BY BRAND ///////////////////////// */
 
 #Toyota{
