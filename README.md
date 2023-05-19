@@ -13,12 +13,17 @@ Explora nuestra página web para ver nuestro inventario actualizado, programar u
 
 En Automax, la satisfacción del cliente es nuestra máxima prioridad. Estamos aquí para superar tus expectativas y ayudarte a encontrar el auto perfecto que se ajuste a tu estilo de vida y necesidades. ¡Visítanos hoy mismo en nuestra concesionaria o en línea y descubre por qué somos la elección confiable de miles de clientes satisfechos!
 
-
 ---------------Funcionamiento de la página-------------------
 El funcionamiento de nuestra pagina web empieza en carsales.js ya que es el codigo donde se crea el servidor para poder correr la pagina en el puerto 8888 y al acceder al puerto 8888 entras a la pagina car.html donde puedes ver algunos de nuestros modelos, así como puedes acceder a donde puedes acceder a los apartados para concernos y poder contactarnos, así como puedes acceder a la información detallada de nuestros modelos, como por ejemplo honda accord 2016, kia forte 2016 o honda civic 2016.
 
+#Instalacion:
+El unico prerequisito para la instalacion es descargar los archivos y haber descargado docker y node js
+
+#Herramientas utilizadas:
+Html,Css y JavaScript
+
+#Autores:
 Creado por Marcela Sigala -->348533 y Alejandro Gonzalez -->348552
-Desarrollado en html, css y javascript
-Desarrollo basado en plataformas 6CC2
+
 
 Licencia: 0000-0000-0000-0001
