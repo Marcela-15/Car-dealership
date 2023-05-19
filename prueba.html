@@ -41,6 +41,9 @@
                 const cell = document.createElement('td');
                 const img = document.createElement('img');
                 img.src = car;
+                img.className = "car-image";
+                img.width="70px";
+                img.height="35px";
                 cell.appendChild(img);
                 row.appendChild(cell);
 
@@ -49,9 +52,6 @@
 
             // Append the table to the body of the HTML document
             document.body.appendChild(table);
-            const h1 = document.createElement('h1');
-            h1.innerHTML = 'Car DAO';
-            document.body.appendChild(h1);
         });
     </script>
 </body>
