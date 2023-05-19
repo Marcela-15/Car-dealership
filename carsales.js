@@ -62,6 +62,5 @@ http.createServer((request, response)=> {
             response.write(data);
             response.end();
         }
-    });}
-
+    });
 }).listen(8888);
