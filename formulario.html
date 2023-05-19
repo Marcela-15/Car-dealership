@@ -9,27 +9,42 @@
 
 <body>
 
+
+<h1>Contact Information</h1>
+
+
+<div class="textForms">
     <form action="/forms" method="POST">
         <label for="nm">First Name</label>
-        <input type="text" name="First name" placeholder="First Name" id="nm" required/> <br/>
+        <input type="text" name="First name" placeholder="First Name" id="nm" required/> 
+        <br>
+        <br>
     
-        <label for="lst_p">Apellido paterno</label>
-        <input type="text" name="last_name_p" placeholder="Apellido paterno" id="lst_p" required/> <br/>
+        <label for="lst_p">Last Name</label>
+        <input type="text" name="last_name_p" placeholder="Last Name" id="lst_p" required/> 
+        <br>
+        <br>
     
-        <label for="phone">Teléfono</label>
-        <input type="text" name="phone" placeholder="Teléfono" id="phone" required/> 
+        <label for="phone">Phone Number</label>
+        <input type="text" name="phone" placeholder="Phone Number" id="phone" required/> 
+        <br>
+        <br>
+
+        <label for="start_d">From: </label>
+        <input type="date" name="Start_Date" id="start_d" required/> 
+        <br>
+        <br>
     
+        <label for="end_d">To: </label>
+        <input type="date" name="End_Date" id="end_d" required/> 
+        <br>
+        <br>
     
-    <br>
-        <label for="start_d">De: </label>
-        <input type="date" name="Start_Date" id="start_d" required/> <br/>
-    
-        <label for="end_d">Hasta: </label>
-        <input type="date" name="End_Date" id="end_d" required/> <br/>
-        <br/>
-    
-        <input type="submit" value="Hecho"/>
+        <input type="submit" value="Done"/>
     </form>
+
+</div>
+
 
 </body>
 

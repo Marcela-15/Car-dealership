@@ -1,0 +1,63 @@
+*{
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: black;
+}
+
+
+
+
+/* ////////////////////////HEADER Y TITULO/////////////////////// */
+
+
+.header {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.textocenter {
+  position: absolute;
+  color: whitesmoke;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: xx-large;
+  
+}
+
+#quote{
+    color: black;
+    margin-top: -200px;
+}
+
+.texto{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: medium;
+    font-weight: lighter;
+}
+.subt{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: large;
+}
+.caja{
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #150050;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-width: 1070px;
+    border:5px solid black;
+    border-radius: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}

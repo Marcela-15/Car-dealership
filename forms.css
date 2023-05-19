@@ -1,0 +1,25 @@
+body{
+    background-image: url(carcollagebueno.png);
+}
+
+*{
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1{
+    text-align: center;
+    color: #150050;
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+
+.textforms{
+    position: relative;
+    font-size: larger;
+    text-align: center;
+    font-weight: bolder;
+}
+
