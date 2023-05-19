@@ -1,0 +1,11 @@
+{
+  "name": "automax",
+  "version": "1.0.0",
+  "description": "Server of sell a car",
+  "main": "carsales.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marcela Sigala, Alejandro Gonzalez",
+  "license": "ABC"
+}
