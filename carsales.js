@@ -1,14 +1,32 @@
 const http = require('http');
 const fs = require('fs');
 
-// HTTP => (request, response)
 
 http.createServer((request, response)=> {
 ``
     const file = request.url == '/' ? './car.html' : `./${request.url}`;
+    if(request.url == '/save' && request.method == "POST"){
+        let data = [];
+        request.on('data', value => {
+            data.push(value);
+        }).on('end', ()=>{
+            let params = Buffer.concat(data).toString();
 
-    //const data = fs.readFileSync('./WWW/index.html');
-    fs.readFile(file, (err, data)=> {
+
+            fs.appendFile('./WWW/customers/customers.info', params + '\n', (error) => {
+                if (error) {
+                  response.writeHead(500, { 'Content-Type': 'text/plain' });
+                  response.write('Error al guardar el formulario');
+                  response.end();
+                } else {
+                    response.writeHead(302, { 'Location': './formulario.html' });
+                    response.end();
+                }
+              });
+
+        });
+    }
+    else{    fs.readFile(file, (err, data)=> {
         if(err){
             response.writeHead(404, {"Content-Type":"text/html"});
             response.write("not found");+
@@ -44,5 +62,6 @@ http.createServer((request, response)=> {
             response.write(data);
             response.end();
         }
-    });
+    });}
+
 }).listen(8888);
