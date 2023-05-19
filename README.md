@@ -16,13 +16,13 @@ En Automax, la satisfacción del cliente es nuestra máxima prioridad. Estamos a
 ---------------Funcionamiento de la página-------------------
 El funcionamiento de nuestra pagina web empieza en carsales.js ya que es el codigo donde se crea el servidor para poder correr la pagina en el puerto 8888 y al acceder al puerto 8888 entras a la pagina car.html donde puedes ver algunos de nuestros modelos, así como puedes acceder a donde puedes acceder a los apartados para concernos y poder contactarnos, así como puedes acceder a la información detallada de nuestros modelos, como por ejemplo honda accord 2016, kia forte 2016 o honda civic 2016.
 
-#Instalacion:
+# Instalacion:
 El unico prerequisito para la instalacion es descargar los archivos y haber descargado docker y node js
 
-#Herramientas utilizadas:
-Html,Css y JavaScript
+# Herramientas utilizadas:
+Html, Css y JavaScript
 
-#Autores:
+# Autores:
 Creado por Marcela Sigala -->348533 y Alejandro Gonzalez -->348552
 
 
