@@ -79,6 +79,105 @@ body{
     object-fit: scale-down;
 }
 
+#teslamodel32023{
+    position: absolute;
+    top: 110%;
+    margin-left: 770px;
+    object-fit: scale-down;
+
+}
+
+#teslamodel32023gray{
+    position: absolute;
+    top: 135%;
+    margin-left: 770px;
+    object-fit:contain;
+
+}
+
+
+#modelxgray{
+    position: absolute;
+    top: 162%;
+    margin-left: 770px;
+    object-fit: scale-down;
+}
+
+#modelxwhite{
+    position: absolute;
+    top: 186%;
+    margin-left: 770px;
+    object-fit: scale-down;
+}
+
+
+#modelywhite{
+    position: absolute;
+    top: 210%;
+    margin-left: 770px;
+    object-fit: scale-down;
+}
+
+#sedan2019{
+    position: absolute;
+    top: 235%;
+    margin-left: 770px;
+    object-fit: scale-down;
+}
+
+#crv{
+    position: absolute;
+    top: 110%;
+    margin-left: 1190px;
+    object-fit: scale-down;
+}
+
+
+#toyota{
+    position: absolute;
+    top: 135%;
+    margin-left: 1190px;
+    object-fit: scale-down;
+}
+
+
+#nissanrojo{
+    position: absolute;
+    top: 162%;
+    margin-left: 1190px;
+    object-fit: scale-down;
+}
+
+#toyotablanco{
+    position: absolute;
+    top: 186%;
+    margin-left: 1190px;
+    object-fit: scale-down;
+}
+#nissanazul{
+    position: absolute;
+    top: 210%;
+    margin-left: 1190px;
+    object-fit: scale-down;
+}
+#toyotagris{
+    position: absolute;
+    top: 235%;
+    margin-left: 1190px;
+    object-fit: scale-down;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ////////////////////////botones side bar ///////////////////*/
 .button {
